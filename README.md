@@ -1,5 +1,4 @@
 # theHam
-___
 
 ##### Landing page with parallax effect, tabs ,and masonry image gallery.
 
