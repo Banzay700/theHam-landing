@@ -1,0 +1,142 @@
+.main__services__container {
+    text-align: center;
+}
+
+.subtitle {
+    position: relative;
+
+    font-size: 36px;
+    line-height: 40px;
+    color: #4e4e4e;
+}
+
+.subtitle::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 1px;
+    background: #18cfab;
+    left: 530px;
+    top: 59px;
+    right: 0;
+    bottom: 0;
+}
+
+.subtitle::before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 1px;
+    background: #18cfab;
+    left: 543px;
+    top: 62px;
+}
+
+.services__tabs {
+    width: 100%;
+    height: 375px;
+    margin-top: 100px;
+}
+
+.tabs__title-wrapper {
+    height: 72px;
+    display: flex;
+
+    justify-content: center;
+}
+
+.tab__title {
+    height: 100%;
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 39px;
+    flex: 1;
+    color: #717171;
+    background-color: #f8fcfe;
+    border: 1px solid #edefef;
+    cursor: pointer;
+}
+
+.tab__title-active {
+    position: relative;
+    border: 1px solid transparent;
+    background-color: #18cfab;
+    color: #ffffff;
+    animation: showBlock 0.6s forwards;
+}
+
+.tab__description-wrapper {
+    display: none;
+    margin-top: 28px;
+    animation: showBlock 0.6s forwards;
+}
+
+.tab__description-wrapper.tab__description-active {
+    display: flex;
+}
+
+.tab__description-image {
+    width: 191px;
+    height: 143px;
+}
+
+.tab__description-text {
+    margin-left: 13px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #777777;
+}
+
+.tab__title:hover {
+    border: 1px solid #18cfab;
+}
+
+.tab__title-active::after {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 83px;
+    border-width: 8px 8px 0;
+    border-style: solid;
+    border-color: #18cfab transparent;
+    display: block;
+    width: 0;
+}
+
+.services__bottom-bg {
+    width: 100%;
+    height: 477px;
+    padding: 127px;
+    text-align: center;
+
+    background-image: url(../../image/background/section2.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottom-bg__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #18cfab;
+}
+
+.bottom-bg-text {
+    margin: 14px 0px 82px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #d8d8d8;
+}
+
+@keyframes showBlock {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,195 @@
+.subtitle {
+    position: relative;
+    width: 613px;
+    margin-top: 92px;
+    font-size: 36px;
+    line-height: 40px;
+    color: #4e4e4e;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subtitle::after {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 1px;
+    background: #18cfab;
+    left: 257px;
+    top: 65px;
+    right: 0;
+    bottom: 0;
+}
+
+.subtitle::before {
+    content: '';
+    position: absolute;
+    width: 85px;
+    height: 1px;
+    background: #18cfab;
+    left: 270px;
+    top: 68px;
+}
+
+.sub-white {
+    color: #ffffff;
+}
+
+.main-btn {
+    display: inline-block;
+    height: 61px;
+    width: 166px;
+    padding: 23px 16px 16px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #18cfab;
+    border-radius: 4px;
+    box-shadow: 0px -4px 0px 0px #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    transition: all 0.25s ease;
+}
+
+.main-btn:hover {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    background-color: #28b699;
+    border-radius: 7px;
+}
+
+.btn-blue {
+    background-color: #00cbf6;
+}
+
+.btn-blue:hover {
+    background-color: #01b4d8;
+}
+
+.amazing-button {
+    position: relative;
+    height: 60px;
+    width: 168px;
+    text-align: center;
+    background-image: none;
+    border: none;
+    outline: none;
+    padding: 23px;
+    padding-left: 38px;
+    background-color: #18cfab;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.amazing-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    z-index: -1;
+    top: 10px;
+    opacity: 0.3;
+    filter: blur(5px);
+    transition: all 0.2s ease-out;
+}
+
+.amazing-button:hover::after {
+    opacity: 0.5;
+    filter: blur(25px);
+    transform: translatey(10px) scalex(1.2);
+}
+
+.amazing-button:active {
+    background-color: #18cfab;
+}
+
+.amazing-button:active::after {
+    opacity: 0.3;
+}
+
+.loading {
+    border-radius: 50px;
+    width: 60px;
+}
+
+.amazing-button.loading::after {
+    width: 40px;
+    left: 5px;
+    top: 12px;
+    border-radius: 100%;
+}
+
+.button-disabled {
+    pointer-events: none;
+    border: 1px solid #414141;
+}
+
+.plus {
+    position: absolute;
+    top: 21px;
+    left: 20px;
+}
+
+.amazing-button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    z-index: -1;
+    top: 2px;
+    left: 4px;
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+    background-color: black;
+    z-index: -1;
+
+    top: 10px;
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+.amazing-button:active {
+    background-color: #18cfab;
+}
+
+.loading {
+    border-radius: 50px;
+    width: 60px;
+}
+
+.amazing-button.loading::after {
+    width: 40px;
+    left: 5px;
+    top: 12px;
+    border-radius: 100%;
+}
+
+.spinner {
+    display: block;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 17px);
+    background: transparent;
+    box-sizing: border-box;
+    border-top: 4px solid white;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-radius: 100%;
+    animation: spin 0.6s ease-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
